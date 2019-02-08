@@ -13,6 +13,8 @@
 		3A33E1DC220D9C35002A7D8B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A33E1DB220D9C35002A7D8B /* Assets.xcassets */; };
 		3A33E1DF220D9C35002A7D8B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A33E1DD220D9C35002A7D8B /* LaunchScreen.storyboard */; };
 		3A33E1EA220D9C35002A7D8B /* SuryaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A33E1E9220D9C35002A7D8B /* SuryaTests.swift */; };
+		718974A75547391F973CAE2E /* Pods_Surya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 245C0D9BEE82FB061D644883 /* Pods_Surya.framework */; };
+		81CB60635DBDE430022299E5 /* Pods_SuryaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7245CE8D80EBE08B2ABC4539 /* Pods_SuryaTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1D474911B46C6D3497EF72AC /* Pods-SuryaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuryaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SuryaTests/Pods-SuryaTests.release.xcconfig"; sourceTree = "<group>"; };
+		245C0D9BEE82FB061D644883 /* Pods_Surya.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Surya.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A33E1D1220D9C32002A7D8B /* Surya.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Surya.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A33E1D4220D9C32002A7D8B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3A33E1D6220D9C32002A7D8B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +40,10 @@
 		3A33E1E5220D9C35002A7D8B /* SuryaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SuryaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A33E1E9220D9C35002A7D8B /* SuryaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuryaTests.swift; sourceTree = "<group>"; };
 		3A33E1EB220D9C35002A7D8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		51438DEE06946382D4FA68B2 /* Pods-Surya.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Surya.release.xcconfig"; path = "Pods/Target Support Files/Pods-Surya/Pods-Surya.release.xcconfig"; sourceTree = "<group>"; };
+		6F47E869FC6C9FA151D0B0A4 /* Pods-SuryaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuryaTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SuryaTests/Pods-SuryaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7245CE8D80EBE08B2ABC4539 /* Pods_SuryaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SuryaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8AADC80399A66EE2997932E /* Pods-Surya.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Surya.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Surya/Pods-Surya.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				718974A75547391F973CAE2E /* Pods_Surya.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81CB60635DBDE430022299E5 /* Pods_SuryaTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +72,8 @@
 				3A33E1D3220D9C32002A7D8B /* Surya */,
 				3A33E1E8220D9C35002A7D8B /* SuryaTests */,
 				3A33E1D2220D9C32002A7D8B /* Products */,
+				D68B6EFE473FC2B80C1DC792 /* Pods */,
+				C862674DE7637FBBB61863C5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,6 +108,26 @@
 			path = SuryaTests;
 			sourceTree = "<group>";
 		};
+		C862674DE7637FBBB61863C5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				245C0D9BEE82FB061D644883 /* Pods_Surya.framework */,
+				7245CE8D80EBE08B2ABC4539 /* Pods_SuryaTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D68B6EFE473FC2B80C1DC792 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C8AADC80399A66EE2997932E /* Pods-Surya.debug.xcconfig */,
+				51438DEE06946382D4FA68B2 /* Pods-Surya.release.xcconfig */,
+				6F47E869FC6C9FA151D0B0A4 /* Pods-SuryaTests.debug.xcconfig */,
+				1D474911B46C6D3497EF72AC /* Pods-SuryaTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,9 +135,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3A33E1EE220D9C35002A7D8B /* Build configuration list for PBXNativeTarget "Surya" */;
 			buildPhases = (
+				D403DF9B97860F5472A8B505 /* [CP] Check Pods Manifest.lock */,
 				3A33E1CD220D9C32002A7D8B /* Sources */,
 				3A33E1CE220D9C32002A7D8B /* Frameworks */,
 				3A33E1CF220D9C32002A7D8B /* Resources */,
+				6BD3591C64A5C7A3CD04AE6A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -120,6 +154,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3A33E1F1220D9C35002A7D8B /* Build configuration list for PBXNativeTarget "SuryaTests" */;
 			buildPhases = (
+				419DFFF742F9306C2608F0A0 /* [CP] Check Pods Manifest.lock */,
 				3A33E1E1220D9C35002A7D8B /* Sources */,
 				3A33E1E2220D9C35002A7D8B /* Frameworks */,
 				3A33E1E3220D9C35002A7D8B /* Resources */,
@@ -191,6 +226,73 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		419DFFF742F9306C2608F0A0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SuryaTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6BD3591C64A5C7A3CD04AE6A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Surya/Pods-Surya-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAlamofire/RxAlamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftSpinner/SwiftSpinner.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAlamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftSpinner.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Surya/Pods-Surya-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D403DF9B97860F5472A8B505 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Surya-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3A33E1CD220D9C32002A7D8B /* Sources */ = {
@@ -358,15 +460,14 @@
 		};
 		3A33E1EF220D9C35002A7D8B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8AADC80399A66EE2997932E /* Pods-Surya.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GPTN7DY2J3;
 				INFOPLIST_FILE = Surya/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ravi.Surya;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -376,15 +477,14 @@
 		};
 		3A33E1F0220D9C35002A7D8B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51438DEE06946382D4FA68B2 /* Pods-Surya.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GPTN7DY2J3;
 				INFOPLIST_FILE = Surya/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ravi.Surya;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -394,17 +494,14 @@
 		};
 		3A33E1F2220D9C35002A7D8B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F47E869FC6C9FA151D0B0A4 /* Pods-SuryaTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GPTN7DY2J3;
 				INFOPLIST_FILE = SuryaTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ravi.SuryaTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -415,17 +512,14 @@
 		};
 		3A33E1F3220D9C35002A7D8B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D474911B46C6D3497EF72AC /* Pods-SuryaTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GPTN7DY2J3;
 				INFOPLIST_FILE = SuryaTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ravi.SuryaTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;

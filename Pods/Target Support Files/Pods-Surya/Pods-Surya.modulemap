@@ -1,0 +1,6 @@
+framework module Pods_Surya {
+  umbrella header "Pods-Surya-umbrella.h"
+
+  export *
+  module * { export * }
+}
