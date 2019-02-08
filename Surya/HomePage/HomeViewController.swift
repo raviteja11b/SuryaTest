@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  HomeViewController.swift
 //  Surya
 //
 //  Created by RaviTeja on 08/02/19.
@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import RxCocoa
 
-class ViewController: UIViewController {
+class HomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
