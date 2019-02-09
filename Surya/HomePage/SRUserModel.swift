@@ -7,9 +7,13 @@
 //
 
 import Foundation
-struct User : Codable{
+struct SRUser : Codable{
     var firstName :  String
     var lastName : String
     var emailId : String
     var imageUrl : String
+}
+
+struct SRListOfUsers : Codable{
+    var items : [SRUser]
 }
