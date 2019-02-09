@@ -7,14 +7,16 @@
 //
 
 import UIKit
-
+import AlamofireImage
 class SRUserTableViewCell: UITableViewCell {
 
     @IBOutlet weak var userImage: UIImageView!
     @IBOutlet weak var userNameLabel: UILabel!
     @IBOutlet weak var userEmailIdLabel: UILabel!
     func setupCell(forUser user : SRUser){
-//        userImage?.image
+        if let imageUrl = URL.init(string: user.imageUrl){
+            userImage?.af_setImage(withURL: imageUrl, placeholderImage: #imageLiteral(resourceName: "placeholder"))
+        }
         userNameLabel?.text = "\(user.firstName) \(user.lastName)"
         userEmailIdLabel?.text = user.emailId
     }

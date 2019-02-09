@@ -66,7 +66,19 @@ extension SRHomeViewController{
 extension SRHomeViewController{
     func bindViews(){
         viewModel.isLoading.asObservable().subscribe(onNext: {[weak self] (status) in
-            self?.progresLabel?.text = status ? "Data is Updating please wait" : ""
+            //changing progress label based on Api request
+            let completionMessage = "Data has been Updated"
+            let progressMessage = "Data is Updating please wait"
+            if let label = self?.progresLabel, label.text == progressMessage, !status{
+                label.text = completionMessage
+                
+                //Animating label
+                DispatchQueue.main.asyncAfter(deadline: .now() + 2.0, execute: {
+                    label.text = ""
+                })
+            }else{
+                self?.progresLabel?.text = status ? progressMessage : ""
+            }
         }).disposed(by: bag)
     }
 }
