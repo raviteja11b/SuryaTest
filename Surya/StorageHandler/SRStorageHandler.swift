@@ -18,3 +18,10 @@ class SRStorageHandler {
         return defaults.data(forKey: forKey)
     }
 }
+
+extension SRStorageHandler{
+    struct StorageKeys{
+        static let usersList = "ListOfUsers"
+        static let userEmailId = "EnteredEmailId"
+    }
+}

@@ -8,27 +8,39 @@
 
 import Foundation
 import RxSwift
+import RxCocoa
 
 class SRUserDataModel {
     let bag = DisposeBag()
-    var users = Variable<[SRUser]>.init([])
-    var isLoading = Variable<Bool>.init(false)
+    var users = BehaviorRelay<[SRUser]>.init(value: [])
+    var isLoading = BehaviorRelay<Bool>.init(value: false)
+    var isUserEmailExists : Bool{
+        return SRStorageHandler.shared.getData(forKey: SRStorageHandler.StorageKeys.userEmailId) != nil
+    }
+    
     func fetchUsersList(forEmail email : String){
+        if isUserEmailExists, let data = SRStorageHandler.shared.getData(forKey: SRStorageHandler.StorageKeys.usersList){
+            let usersList : SRListOfUsers? = SRNetworkUtils.parseData(withData: Data(data))
+            users.accept(usersList?.items ?? [])
+        }
         
+        fetchUsersFromServer(forEmail: email)
     }
     
     func fetchUsersFromServer(forEmail email : String){
-        isLoading.value = true
+        isLoading.accept(true)
         SRNetworkLayer.shared.getListOfUsers(withUserEmail: email).asObservable().subscribe(onNext: {[weak self] (response, data) in
-            self?.isLoading.value = false
+            self?.isLoading.accept(false)
             if response.statusCode == 200{
                 let list : SRListOfUsers? = SRNetworkUtils.parseData(withData: Data(data))
-                self?.users.value = list?.items ?? []
+                SRStorageHandler.shared.saveData(data: email.data(using: .utf8), forKey: SRStorageHandler.StorageKeys.userEmailId)
+                SRStorageHandler.shared.saveData(data: data, forKey: SRStorageHandler.StorageKeys.usersList)
+                self?.users.accept(list?.items ?? [])
             }else{
                 print("error with Status Code \(response.statusCode)")
             }
         }, onError: {[weak self] (error) in
-            self?.isLoading.value = true
+            self?.isLoading.accept(true)
             print(#function, #line)
             print("error \(error.localizedDescription)")
         }).disposed(by: bag)

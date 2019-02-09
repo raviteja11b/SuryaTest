@@ -14,8 +14,8 @@
 		3A33E1EA220D9C35002A7D8B /* SuryaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A33E1E9220D9C35002A7D8B /* SuryaTests.swift */; };
 		3A33E1F6220DA81D002A7D8B /* SRHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A33E1F5220DA81D002A7D8B /* SRHomeViewController.swift */; };
 		3A33E1F7220DA81D002A7D8B /* SRHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A33E1F5220DA81D002A7D8B /* SRHomeViewController.swift */; };
-		3A33E1F9220DA83A002A7D8B /* SRHomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A33E1F8220DA83A002A7D8B /* SRHomeViewModel.swift */; };
-		3A33E1FA220DA83A002A7D8B /* SRHomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A33E1F8220DA83A002A7D8B /* SRHomeViewModel.swift */; };
+		3A33E1F9220DA83A002A7D8B /* SRUsersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A33E1F8220DA83A002A7D8B /* SRUsersViewModel.swift */; };
+		3A33E1FA220DA83A002A7D8B /* SRUsersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A33E1F8220DA83A002A7D8B /* SRUsersViewModel.swift */; };
 		3A33E1FC220DA845002A7D8B /* SRUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A33E1FB220DA845002A7D8B /* SRUserModel.swift */; };
 		3A33E1FD220DA845002A7D8B /* SRUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A33E1FB220DA845002A7D8B /* SRUserModel.swift */; };
 		3A33E1FF220DA863002A7D8B /* SRUsersDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A33E1FE220DA863002A7D8B /* SRUsersDataModel.swift */; };
@@ -28,6 +28,8 @@
 		3A469EF4220EAA7800D1E665 /* SRStorageHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A469EF3220EAA7800D1E665 /* SRStorageHandler.swift */; };
 		3A469EF5220EAA7800D1E665 /* SRStorageHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A469EF3220EAA7800D1E665 /* SRStorageHandler.swift */; };
 		3A469EF8220EAB8F00D1E665 /* SRStorageTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A469EF7220EAB8F00D1E665 /* SRStorageTest.swift */; };
+		3A469EFA220EB23E00D1E665 /* SRUserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A469EF9220EB23E00D1E665 /* SRUserTableViewCell.swift */; };
+		3A469EFC220EB56800D1E665 /* SRUserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A469EF9220EB23E00D1E665 /* SRUserTableViewCell.swift */; };
 		718974A75547391F973CAE2E /* Pods_Surya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 245C0D9BEE82FB061D644883 /* Pods_Surya.framework */; };
 		81CB60635DBDE430022299E5 /* Pods_SuryaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7245CE8D80EBE08B2ABC4539 /* Pods_SuryaTests.framework */; };
 /* End PBXBuildFile section */
@@ -55,7 +57,7 @@
 		3A33E1E9220D9C35002A7D8B /* SuryaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuryaTests.swift; sourceTree = "<group>"; };
 		3A33E1EB220D9C35002A7D8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A33E1F5220DA81D002A7D8B /* SRHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SRHomeViewController.swift; sourceTree = "<group>"; };
-		3A33E1F8220DA83A002A7D8B /* SRHomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SRHomeViewModel.swift; sourceTree = "<group>"; };
+		3A33E1F8220DA83A002A7D8B /* SRUsersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SRUsersViewModel.swift; sourceTree = "<group>"; };
 		3A33E1FB220DA845002A7D8B /* SRUserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SRUserModel.swift; sourceTree = "<group>"; };
 		3A33E1FE220DA863002A7D8B /* SRUsersDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SRUsersDataModel.swift; sourceTree = "<group>"; };
 		3A33E203220DADA4002A7D8B /* SRNetworkLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SRNetworkLayer.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 		3A33E20A220DB86B002A7D8B /* NetworkLayerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLayerTest.swift; sourceTree = "<group>"; };
 		3A469EF3220EAA7800D1E665 /* SRStorageHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SRStorageHandler.swift; sourceTree = "<group>"; };
 		3A469EF7220EAB8F00D1E665 /* SRStorageTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SRStorageTest.swift; sourceTree = "<group>"; };
+		3A469EF9220EB23E00D1E665 /* SRUserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SRUserTableViewCell.swift; sourceTree = "<group>"; };
 		51438DEE06946382D4FA68B2 /* Pods-Surya.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Surya.release.xcconfig"; path = "Pods/Target Support Files/Pods-Surya/Pods-Surya.release.xcconfig"; sourceTree = "<group>"; };
 		6F47E869FC6C9FA151D0B0A4 /* Pods-SuryaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuryaTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SuryaTests/Pods-SuryaTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7245CE8D80EBE08B2ABC4539 /* Pods_SuryaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SuryaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -139,9 +142,10 @@
 			isa = PBXGroup;
 			children = (
 				3A33E1F5220DA81D002A7D8B /* SRHomeViewController.swift */,
-				3A33E1F8220DA83A002A7D8B /* SRHomeViewModel.swift */,
+				3A33E1F8220DA83A002A7D8B /* SRUsersViewModel.swift */,
 				3A33E1FE220DA863002A7D8B /* SRUsersDataModel.swift */,
 				3A33E1FB220DA845002A7D8B /* SRUserModel.swift */,
+				3A469EF9220EB23E00D1E665 /* SRUserTableViewCell.swift */,
 			);
 			path = HomePage;
 			sourceTree = "<group>";
@@ -373,10 +377,11 @@
 				3A33E204220DADA4002A7D8B /* SRNetworkLayer.swift in Sources */,
 				3A469EF4220EAA7800D1E665 /* SRStorageHandler.swift in Sources */,
 				3A33E1D5220D9C32002A7D8B /* AppDelegate.swift in Sources */,
-				3A33E1F9220DA83A002A7D8B /* SRHomeViewModel.swift in Sources */,
+				3A33E1F9220DA83A002A7D8B /* SRUsersViewModel.swift in Sources */,
 				3A33E1FC220DA845002A7D8B /* SRUserModel.swift in Sources */,
 				3A33E1F6220DA81D002A7D8B /* SRHomeViewController.swift in Sources */,
 				3A33E207220DB39B002A7D8B /* SRNetworkUtils.swift in Sources */,
+				3A469EFA220EB23E00D1E665 /* SRUserTableViewCell.swift in Sources */,
 				3A33E1FF220DA863002A7D8B /* SRUsersDataModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -390,11 +395,12 @@
 				3A33E205220DADA4002A7D8B /* SRNetworkLayer.swift in Sources */,
 				3A33E1EA220D9C35002A7D8B /* SuryaTests.swift in Sources */,
 				3A469EF5220EAA7800D1E665 /* SRStorageHandler.swift in Sources */,
-				3A33E1FA220DA83A002A7D8B /* SRHomeViewModel.swift in Sources */,
+				3A33E1FA220DA83A002A7D8B /* SRUsersViewModel.swift in Sources */,
 				3A33E1FD220DA845002A7D8B /* SRUserModel.swift in Sources */,
 				3A33E1F7220DA81D002A7D8B /* SRHomeViewController.swift in Sources */,
 				3A33E208220DB39B002A7D8B /* SRNetworkUtils.swift in Sources */,
 				3A33E200220DA863002A7D8B /* SRUsersDataModel.swift in Sources */,
+				3A469EFC220EB56800D1E665 /* SRUserTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
