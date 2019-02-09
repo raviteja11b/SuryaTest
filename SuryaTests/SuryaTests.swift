@@ -8,27 +8,32 @@
 
 import XCTest
 @testable import Surya
+import RxSwift
+import RxCocoa
 
 class SuryaTests: XCTestCase {
 
-    override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    func testSRUserViewModel() {
+        let model = SRUsersViewModel.init()
+        let bag = DisposeBag()
+        let listExpe = expectation(description: "List of users Response")
+        removeOldData()
+        model.usersList.asObservable().subscribe(onNext: {[weak self] (users) in
+            if users.count > 0{
+                XCTAssert(self?.checkDataStorage() ?? false, "Data Not storing locally")
+                listExpe.fulfill()
+            }
+        }).disposed(by: bag)
+        model.requestForData(forEmail: "test@test.com")
+        wait(for: [listExpe], timeout: 10)
     }
-
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    
+    func removeOldData(){
+        SRStorageHandler.shared.saveData(data: nil, forKey: SRStorageHandler.StorageKeys.usersList)
     }
-
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    
+    func checkDataStorage()->Bool{
+        return SRStorageHandler.shared.getData(forKey: SRStorageHandler.StorageKeys.usersList) != nil
     }
 
 }
